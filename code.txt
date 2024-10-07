@@ -1,0 +1,77 @@
+
+At bulid.gradle.kts(Module:app)----------> implementation ("com.intuit.sdp:sdp-android:1.1.1")     ;   FOR   dp
+                                                                        implementation ("com.intuit.ssp:ssp-android:1.1.1")     ; FOR   ssp
+
+At values/themes.xml-----> 
+
+
+ <?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+</resources>
+
+At app create anim folder xml-file for animation-------------------->
+
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+android:interpolator="@android:anim/accelerate_interpolator"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0"
+    android:duration="3000"
+/>
+
+At anim folder --------zoom_in----------------------------------->
+
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+android:fromXScale="0.5"
+    android:fromYScale="0.5"
+    android:toXScale="1.0"
+    android:toYScale="1.0"
+    android:fillAfter="true"
+    android:duration="6000"
+
+/>
+
+
+
+For Animation In main  With FullScreenClass----->
+
+package com.neyamul.myapplication;
+
+
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+
+
+
+public class MainActivity extends AppCompatActivity {
+   
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+       
+       Animation fadeIn= AnimationUtils.loadAnimation(this,R.anim.zoom_in);
+    }
+}
+
+
