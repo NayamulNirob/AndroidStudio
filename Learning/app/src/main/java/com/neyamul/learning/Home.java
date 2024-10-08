@@ -1,4 +1,4 @@
-package com.neyamul.myapplication;
+package com.neyamul.learning;
 
 import android.os.Bundle;
 
@@ -9,8 +9,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Home extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +22,7 @@ public class Home extends AppCompatActivity {
         });
     }
 
-//    val imageList = ArrayList < SlideModel >() // Create image list
+    //    val imageList = ArrayList < SlideModel >() // Create image list
 //
 //// imageList.add(SlideModel("String Url" or R.drawable)
 //// imageList.add(SlideModel("String Url" or R.drawable, "title") You can add title
