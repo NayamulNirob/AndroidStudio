@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/noticeDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: 2024-10-08"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/_15ssp"/>
+
+
+    <TextView
+        android:id="@+id/noticeNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clubs Join Installation &amp; Family Day 2023 "
+        android:textSize="@dimen/_14ssp"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

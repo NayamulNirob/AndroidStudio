@@ -1,4 +1,4 @@
-package com.neyamul.learning;
+package com.neyamul.learning.api;
 
 import com.neyamul.learning.model.Slide;
 
@@ -6,7 +6,6 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 
 public interface SlideApi {
 

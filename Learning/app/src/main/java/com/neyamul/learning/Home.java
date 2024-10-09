@@ -1,6 +1,10 @@
 package com.neyamul.learning;
 
+import android.app.Notification;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.neyamul.learning.api.SlideApi;
 import com.neyamul.learning.apiClient.ApiClient;
 import com.neyamul.learning.model.Slide;
 
@@ -24,6 +29,8 @@ import retrofit2.Response;
 
 public class Home extends AppCompatActivity {
 
+    private ImageView notification,lionsClubs,directors,leoClubs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +43,6 @@ public class Home extends AppCompatActivity {
         });
 
         SlideApi slideApi= ApiClient.getRetrofit().create(SlideApi.class);
-
-
 
         Call <List<Slide>> call = slideApi.getSlides();
 
@@ -72,6 +77,28 @@ public class Home extends AppCompatActivity {
             }
         });
 
+
+        notification=findViewById(R.id.notification);
+
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), Notification.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        lionsClubs=findViewById(R.id.lionsClubs);
+
+        lionsClubs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),LionsClubsDashbord.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
