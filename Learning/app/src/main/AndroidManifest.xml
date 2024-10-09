@@ -15,14 +15,17 @@
         android:theme="@style/Theme.Learning"
         tools:targetApi="31">
         <activity
-            android:name=".LionsClubsDashbord"
+            android:name=".PurbachalClubDetails"
             android:exported="false" />
+        <activity
+            android:name=".LionsClubsDashbord"
+            android:exported="true" />
         <activity
             android:name=".Notification"
             android:exported="false" />
         <activity
             android:name=".Home"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
