@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326084260386",
+    "project_id": "learning-2d656",
+    "storage_bucket": "learning-2d656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326084260386:android:905dbcf4d5b2a30c7f107b",
+        "android_client_info": {
+          "package_name": "com.neyamul.learning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBikjP7sV1YomCm0z3ZDkWQs1Oypkno1W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

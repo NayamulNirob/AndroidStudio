@@ -57,45 +57,47 @@ public class PurbachalModelAdapter extends RecyclerView.Adapter<PurbachalModelAd
 
         Picasso.get().load(imageUrl).into(holder.memberImage);
 
-        holder.btnCall.setOnClickListener(v -> {
-            try{
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + purbachalModel.getCell()));
-                context.startActivity(intent);
 
-            }
-            catch (Exception e){
-                e.printStackTrace();
+
+
+        holder.btnCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + purbachalModel.getCell()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                context.startActivity(intent);
 
             }
         });
 
+
+
+
         holder.btnEmail.setOnClickListener(v -> {
-            try{
+            try {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:" + purbachalModel.getEmail()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                 context.startActivity(intent);
 
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
 
             }
         });
 
         holder.btnSms.setOnClickListener(v -> {
-            try{
+            try {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("sms:" + purbachalModel.getPhone()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                 context.startActivity(intent);
 
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
 
             }
         });
-
 
 
     }

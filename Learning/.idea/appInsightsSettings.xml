@@ -18,10 +18,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.neyamul.learning" />
+                  <option name="mobileSdkAppId" value="1:326084260386:android:905dbcf4d5b2a30c7f107b" />
+                  <option name="projectId" value="learning-2d656" />
+                  <option name="projectNumber" value="326084260386" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
