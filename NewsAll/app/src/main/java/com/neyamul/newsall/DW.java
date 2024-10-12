@@ -27,7 +27,7 @@ public class DW extends AppCompatActivity {
 
         WebSettings webSettings=dw.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        dw.loadUrl("https://www.dw.com/");
+        dw.loadUrl("https://www.dw.com/bn/");
         dw.setWebViewClient(new sameView());
 
     }
