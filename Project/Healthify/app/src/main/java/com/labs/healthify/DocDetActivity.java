@@ -20,51 +20,51 @@ public class DocDetActivity extends AppCompatActivity {
 
     private String[][] doctor_details1 =
     {
-        {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-        {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No:7898989898", "900"},
-        {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
-        {"Doctor Name : Deepak Deshmukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No:9898800000", "500"},
-        {"Doctor Name : Ashok Panda", "Hospital Address : Katrai", "Exp : 7yrs", "Mobile No:7798989898", "800"}
+        {"Doctor Name : Prof. Dr. Muhammad Mahbub Hussain", "Hospital Address : Rangpur Medical College & Hospital", "Exp : 5yrs", "Mobile No: 4553452255425", "600"},
+        {"Doctor Name : Dr. Md. Hasanuzzaman", "Hospital Address : Dhaka Medical College & Hospital", "Exp : 15yrs", "Mobile No:45898988", "900"},
+        {"Doctor Name : Dr. Md. Mosharaf Hossain Palash", "Hospital Address : National Institute of Cancer Research & Hospital", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
+        {"Doctor Name : Deepak Deshmukh", "Hospital Address : Ministry of Health and Family Welfare (MoHFW)", "Exp : 6yrs", "Mobile No:9898800000", "500"},
+        {"Doctor Name : Dr. Muhammad Abdur Razzak", "Hospital Address : 250 Bed General Hospital, Manikganj", "Exp : 7yrs", "Mobile No:7798989898", "800"}
     };
 
 
     private String[][] doctor_details2 =
             {
-                    {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-                    {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
-                    {"Doctor Name : Deepak Deshmukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No:9898800000", "500"},
-                    {"Doctor Name : Ashok Panda", "Hospital Address : Katrai", "Exp : 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name : Dr. Istajul Khan", "Hospital Address : Bangabandhu Sheikh Mujib Medical University Hospital", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+                    {"Doctor Name : Dr. Fahmida Khanam Shammi", "Hospital Address : 250 Bedded General Hospital, Pabna", "Exp : 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name : Dr. Md. Ashekin Abir", "Hospital Address : 250 Bedded General Hospital, Pabna", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
+                    {"Doctor Name : Deepak Deshmukh", "Hospital Address : Bangabandhu Sheikh Mujib Medical University Hospital", "Exp : 6yrs", "Mobile No:9898800000", "500"},
+                    {"Doctor Name : Ashok Panda", "Hospital Address : Marine City Medical College & Hospital", "Exp : 7yrs", "Mobile No:7798989898", "800"}
             };
 
 
     private String[][] doctor_details3 =
             {
-                    {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-                    {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
+                    {"Doctor Name : Dr. S. M. Shahidul Islam", "Hospital Address : General Secretary of Bangladesh Acupuncture Association", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+                    {"Doctor Name : Dr. SMA Alim", "Hospital Address : Central Police Hospital", "Exp : 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name : Dr. Md. Mosharaf Hossain Palash", "Hospital Address : National Institute of Cancer Research & Hospital", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
                     {"Doctor Name : Deepak Deshmukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No:9898800000", "500"},
-                    {"Doctor Name : Ashok Panda", "Hospital Address : Katrai", "Exp : 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name : Dr. Md. Mazharul Alam", "Hospital Address : Bangladesh Korea Friendship Government Hospital", "Exp : 7yrs", "Mobile No:7798989898", "800"}
             };
 
 
     private String[][] doctor_details4 =
             {
-                    {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-                    {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
-                    {"Doctor Name : Deepak Deshmukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No:9898800000", "500"},
-                    {"Doctor Name : Ashok Panda", "Hospital Address : Katrai", "Exp : 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name : Prof. Dr. Moinul Hossain", "Hospital Address : Bangabandhu Sheikh Mujib Medical University Hospital", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+                    {"Doctor Name : Dr. Muhammad Shamsul Arefin", "Hospital Address : National Institute of Neurosciences & Hospital", "Exp : 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name : Prof. Dr. Jonaid Shafiq", "Hospital Address : Japan Bangladesh Friendship Hospital", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
+                    {"Doctor Name : Brig. Gen. Prof. Dr. MHM Delwar Hossain", "Hospital Address : Combined Military Hospital, Dhaka", "Exp : 6yrs", "Mobile No:9898800000", "500"},
+                    {"Doctor Name : Prof. Dr. AKM Akhtaruzzaman", "Hospital Address : Bangabandhu Sheikh Mujib Medical University Hospital", "Exp : 7yrs", "Mobile No:7798989898", "800"}
             };
 
 
     private String[][] doctor_details5 =
             {
-                    {"Doctor Name : Ajit Saste", "Hospital Address : Pimpri", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
-                    {"Doctor Name : Prasad Pawar", "Hospital Address : Nigdi", "Exp : 15yrs", "Mobile No:7898989898", "900"},
-                    {"Doctor Name : Swapnil Kale", "Hospital Address : Pune", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
-                    {"Doctor Name : Deepak Deshmukh", "Hospital Address : Chinchwad", "Exp : 6yrs", "Mobile No:9898800000", "500"},
-                    {"Doctor Name : Ashok Panda", "Hospital Address : Katrai", "Exp : 7yrs", "Mobile No:7798989898", "800"}
+                    {"Doctor Name : Dr. A.K.M. Asaduzzaman", "Hospital Address : Dhaka Medical College & Hospital", "Exp : 5yrs", "Mobile No: 9898989898", "600"},
+                    {"Doctor Name : Prof. Dr. Md. Rezaul Hoque", "Hospital Address : Ibn Sina Medical College & Hospital", "Exp : 15yrs", "Mobile No:7898989898", "900"},
+                    {"Doctor Name : Prof. Dr. Md. Mahbubul Hasan Monir", "Hospital Address : Square Hospital, Dhaka", "Exp : 8yrs", "Mobile No:8898989898" ,"300"},
+                    {"Doctor Name : Dr. Lutful Aziz", "Hospital Address : Bangladesh Medical College & Hospital", "Exp : 6yrs", "Mobile No:9898800000", "500"},
+                    {"Doctor Name : Dr. Shukha Ranjan Das", "Hospital Address : Evercare Hospital, Dhaka", "Exp : 7yrs", "Mobile No:7798989898", "800"}
             };
 
     TextView tv;
