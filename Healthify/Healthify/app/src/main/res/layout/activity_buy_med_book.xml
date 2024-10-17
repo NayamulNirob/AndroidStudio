@@ -7,12 +7,13 @@
     tools:context=".BuyMedBookActivity"
     android:background="@drawable/back2">
 
+
     <TextView
         android:id="@+id/tvmedb"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="68dp"
         android:gravity="center"
         android:text="Healthify 24 x 7 Solution"
         android:textAlignment="center"
@@ -21,7 +22,7 @@
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/tvfilldet"
@@ -36,8 +37,7 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tvmedb"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="162dp" />
-
+        tools:layout_editor_absoluteX="0dp" />
 
     <EditText
         android:id="@+id/etmedbookname"
@@ -138,12 +138,13 @@
         android:id="@+id/btnbookmed"
         android:layout_width="220dp"
         android:layout_height="52dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
 
         android:gravity="center"
         android:text="Book Medicines"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etmedbookconum"
         tools:ignore="MissingConstraints" />

@@ -27,7 +27,7 @@
         android:id="@+id/tvlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="LOGIN"
         android:textAlignment="center"
@@ -43,7 +43,7 @@
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/input_bg"
@@ -61,12 +61,13 @@
         app:layout_constraintTop_toBottomOf="@id/etlogname"
         tools:ignore="MissingConstraints" />
 
+
     <EditText
         android:id="@+id/etlogname"
-        android:layout_width="307dp"
-        android:layout_height="50dp"
+        android:layout_width="305dp"
+        android:layout_height="54dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/input_bg"
@@ -79,42 +80,40 @@
         android:paddingRight="20dp"
         app:layout_constraintBottom_toTopOf="@+id/etlogpass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvlogin"
         tools:ignore="MissingConstraints" />
-
-
 
     <Button
         android:id="@+id/buttonlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="125dp"
-    android:background="@drawable/input_bg"
+        android:background="@drawable/input_bg"
         android:text="Login"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etlogpass"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvreg"
-        app:layout_constraintTop_toBottomOf="@id/buttonlogin"
-        android:layout_width="match_parent"
-        android:layout_marginTop="35dp"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="39dp"
         android:text="New User! Register Here "
         android:textAlignment="center"
         android:textColor="#4F237B"
         android:textSize="20dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        app:layout_constraintVertical_bias="0.064"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
