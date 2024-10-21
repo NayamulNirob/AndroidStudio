@@ -1,5 +1,5 @@
 [versions]
-agp = "8.7.0"
+agp = "8.7.1"
 imageslideshow = "0.1.2"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -15,6 +15,7 @@ sdpAndroid = "1.1.1"
 sspAndroid = "1.1.1"
 googleGmsGoogleServices = "4.4.2"
 firebaseMessaging = "24.0.2"
+firebaseAuth = "23.0.0"
 
 [libraries]
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
@@ -32,6 +33,7 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
 ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
 firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
