@@ -12,7 +12,20 @@
           "package_name": "com.neyamul.learning"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "326084260386-t9u5cklcslvpaaid4kpacr0i18oksac5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neyamul.learning",
+            "certificate_hash": "eca682be635c5fe0d0d4cd6f0ea00c58a53c62ff"
+          }
+        },
+        {
+          "client_id": "326084260386-kbu91eugocn94psuu85764dl3kvml48j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBikjP7sV1YomCm0z3ZDkWQs1Oypkno1W8"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326084260386-kbu91eugocn94psuu85764dl3kvml48j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

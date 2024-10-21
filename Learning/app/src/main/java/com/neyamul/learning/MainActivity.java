@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Intent intent=new Intent(getApplicationContext(), Home.class);
+                Intent intent=new Intent(getApplicationContext(), login.class);
                 startActivity(intent);
                 finish();
             }
