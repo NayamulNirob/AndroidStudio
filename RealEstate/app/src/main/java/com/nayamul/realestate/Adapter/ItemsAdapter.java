@@ -25,7 +25,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.viewHolder> 
 
     public ItemsAdapter(ArrayList<ItemsDomin> items) {
         this.items = items;
-        formatter = new DecimalFormat("###,###,###,###,##");
+        formatter = new DecimalFormat("###,###,###,###.##");
     }
 
     DecimalFormat formatter;
