@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BuyMedDetActivity"
-    android:background="@drawable/labtest2">
+    android:background="@drawable/medicine_background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:gravity="center"
             android:text="Healthify 24 x 7 Solution"
             android:textAlignment="center"
-            android:textColor="#4F62C6"
+            android:textColor="#0129FF"
             android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -33,8 +33,8 @@
             android:id="@+id/tvlocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delivery Location : Vadodara"
-            android:textColor="#360942"
+            android:text="Delivery Location : Dhaka"
+            android:textColor="#0217FF"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buy Medicine"
-            android:textColor="#2948A4"
+            android:textColor="#0035E7"
             android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +101,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textMultiLine"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvmedpackages" />
@@ -115,7 +115,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:text="TextView"
             android:textSize="30dp"
-            android:textColor="#FFEB3B"
+            android:textColor="#0388FB"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineBMD"
             tools:layout_editor_absoluteX="144dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
