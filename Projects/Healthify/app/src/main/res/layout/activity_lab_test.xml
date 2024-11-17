@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LabTestActivity"
-    android:background="@drawable/labtest2">
+    android:background="@drawable/lab2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:gravity="center"
             android:text="Healthify 24 x 7 Solution"
             android:textAlignment="center"
-            android:textColor="#172469"
+            android:textColor="#2B49FF"
             android:textSize="30dp"
             android:textStyle="bold"
             app:layout_constraintTop_toTopOf="parent"
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delivery Location : Dhaka"
-            android:textColor="#F3EAF8"
+            android:textColor="#0C3BAB"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

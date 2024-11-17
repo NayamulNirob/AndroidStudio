@@ -5,48 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:background="@drawable/back2">
+    android:background="@drawable/registration">
+
 
     <TextView
         android:id="@+id/tv247"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="36dp"
         android:gravity="center"
         android:text="Healthify 24 x 7 Solution"
         android:textAlignment="center"
         android:textColor="#172469"
-        android:textSize="30dp"
+        android:textSize="32dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp" />
-
-    <TextView
-        android:id="@+id/tvregister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:text="REGISTER"
-        android:textAlignment="center"
-        android:textColor="#360942"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv247"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="162dp" />
-
-
-
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etregname"
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input_bg"
@@ -57,11 +41,12 @@
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/etregpass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvregister"
+        app:layout_constraintVertical_bias="0.26"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -69,24 +54,24 @@
         android:layout_width="307dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="E-Mail"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/etregpass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etregname"
+        app:layout_constraintVertical_bias="0.26"
         tools:ignore="MissingConstraints" />
-
 
     <EditText
         android:id="@+id/etregpass"
@@ -101,12 +86,12 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
+        android:textColorHint="#000000"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         app:layout_constraintBottom_toTopOf="@+id/etconpass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etmail"
         tools:ignore="MissingConstraints" />
@@ -118,7 +103,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="220dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
@@ -127,9 +112,9 @@
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etregpass"
         tools:ignore="MissingConstraints" />
@@ -137,33 +122,50 @@
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="115dp"
         android:background="@drawable/input_bg"
         android:text="Register"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etconpass"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/tvlog"
-        app:layout_constraintTop_toBottomOf="@id/buttonRegister"
         android:layout_width="match_parent"
-        android:layout_marginTop="35dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:text="Already Registerd !!Click HERE!!"
         android:textAlignment="center"
         android:textColor="#4F237B"
         android:textSize="20dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonRegister"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="REGISTER HERE"
+        android:textAlignment="center"
+        android:textColor="#360942"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv247"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="360dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

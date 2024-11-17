@@ -33,7 +33,7 @@
             android:id="@+id/tvlocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delivery Location : Vadodara"
+            android:text="Delivery Location : Dhaka"
             android:textColor="#360942"
             android:textSize="20dp"
             android:textStyle="bold"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/homeback">
+    android:background="@drawable/home_back">
 
     <TextView
         android:id="@+id/tvtitle"
