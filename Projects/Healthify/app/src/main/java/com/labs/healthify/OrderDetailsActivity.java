@@ -57,7 +57,7 @@ public class OrderDetailsActivity extends AppCompatActivity {
             }else {
                 order_detail[i][3]="Del:"+strData[4]+" "+strData[5];
             }
-            order_detail[i][2]="Rs."+strData[6];
+            order_detail[i][2]="Tk."+strData[6];
             order_detail[i][4]=strData[7];
         }
 
